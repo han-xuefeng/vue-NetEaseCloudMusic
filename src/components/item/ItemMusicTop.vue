@@ -30,8 +30,8 @@
     <div class="contentRight">
       <p class="rightP_one">{{ playlist.name }}</p>
       <div class="right_img">
-        <img :src="playlist.creator.backgroundUrl" alt="" />
-        <span>{{ playlist.creator.nickname }}</span>
+        <img :src="playlist.creator?.backgroundUrl" alt="" />
+        <span>{{ playlist.creator?.nickname }}</span>
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-rightarrow"></use>
         </svg>
@@ -78,7 +78,7 @@
       default: () => ({})
     }
   })
-  props.playlist.creator=""
+  // props.playlist.creator=""
   console.log(props.playlist)
   function changeCount(num) {
     if (num >= 100000000) {

@@ -1,5 +1,6 @@
 <template>
   <router-view/>
+  <FooterMusic />
 </template>
 
 <style lang="less">
@@ -14,3 +15,6 @@
   height: .4rem;
 }
 </style>
+<script setup>
+import FooterMusic from './components/item/FooterMusic.vue'
+</script>
